@@ -1,0 +1,31 @@
+.container{
+    margin-top: 5px;
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.allproduct-card{
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;  
+    justify-content: center;
+    align-items: center;    
+    box-shadow: 0 -5px 3px -3px black, 0 5px 3px -3px 
+}
+
+.allproduct-card img{
+    width: 80%;
+}
+
+.brand{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.price{
+    font-size: 18px;
+    margin-top: 5px;
+}
