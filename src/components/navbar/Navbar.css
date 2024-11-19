@@ -51,15 +51,15 @@
 .electronic{
     display: flex;
     position: relative;
-}
+} */
 
-.sub{
+ .sub{
     height: 150px;
     width: 40px;
 }
 
 .sub li{
-    padding-top: 20px;
+    padding-top: 10px;
 }
 
 .electronic ul{
@@ -76,6 +76,7 @@
 
 .electronic:hover > .sub{
     display: inline-block;
+    position: fixed;
    
 }
 

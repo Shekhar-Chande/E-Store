@@ -20,6 +20,7 @@ const mobiles = createSlice({
     initialState: {
         isLoading: null,
         data: null,
+       flag: false
     },
 
     extraReducers: (builder)=>{
@@ -30,6 +31,8 @@ const mobiles = createSlice({
         builder.addCase(fetchMobiles.fulfilled, (state, action)=>{
             state.isLoading = false,
             state.data = action.payload;
+            state.flag = true
+
         })
 
         builder.addCase(fetchMobiles.rejected, (state, action)=>{

@@ -9,7 +9,6 @@ function Mobile() {
     if(state.mobiles.isLoading){
         return <h1>Loading......</h1>
       }
-  //  console.log(state.mobiles.data)
 
   return (
     <>

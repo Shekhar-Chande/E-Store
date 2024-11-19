@@ -19,6 +19,7 @@ const watches = createSlice({
     initialState:{
         isLoading: false,
         data: null,
+        flag: false
     },
     extraReducers: (builder)=>{
         builder.addCase(fetchWatches.pending, (state, action)=>{
@@ -28,6 +29,7 @@ const watches = createSlice({
         builder.addCase(fetchWatches.fulfilled, (state, action)=>{
             state.isLoading=false,
             state.data = action.payload;
+            state.flag = true
         })
 
         builder.addCase(fetchWatches.rejected, (state, action)=>{
